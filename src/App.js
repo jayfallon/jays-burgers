@@ -1,12 +1,20 @@
-import React from 'react';
-import Layout from './components/Layout/Layout'
+import React, { Component } from 'react';
+import Layout from './components/Layout/Layout';
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
 
-function App() {
-  return (
-    <Layout>
-      <h1>hello</h1>
+class App extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {  }
+  // }
+  render() { 
+    return ( 
+      <Layout>
+      <BurgerBuilder/>
     </Layout>
-  );
+     );
+  }
 }
-
+ 
 export default App;
+
