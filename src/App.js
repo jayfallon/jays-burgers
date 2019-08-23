@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
-import Layout from './components/Layout/Layout';
-import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
+import React, { Component } from "react";
+import Layout from "./Hoc/Layout/Layout";
+import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {  }
-  // }
-  render() { 
-    return ( 
+  render() {
+    return (
       <Layout>
-      <BurgerBuilder/>
-    </Layout>
-     );
+        <BurgerBuilder />
+      </Layout>
+    );
   }
 }
- 
-export default App;
 
+export default App;
